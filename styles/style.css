@@ -132,24 +132,27 @@ main>section {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 5rem 0rem;
 
 }
-.collection-container > h1{
+
+.collection-container>h1 {
     text-align: center;
 }
+
 .collection-container>.collection-items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-   
+
 
 }
-.btn-container{
+
+.btn-container {
     display: flex;
     justify-content: end;
 }
-.collection-container > .btn{
+
+.collection-container>.btn {
     text-align: right;
 }
 
@@ -212,8 +215,38 @@ main>section {
     line-height: 143%;
 }
 
+.feature-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
 
+}
 
+.feature-container>.feature-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+}
+
+.feature-container>.feature-content>.feature-content-title {
+    color: #0A0826;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    /* 157.895% */
+}
+
+.feature-container>.feature-content>.feature-content-description {
+    color: #6C6C6C;
+
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.6rem;
+    width: 35rem;
+    text-align: justify;
+    
+}
 
 /* mobile device */
 @media screen and (max-width:576px) {
@@ -266,15 +299,27 @@ main>section {
         gap: 1rem;
         padding: 0rem;
     }
-    .collection-container>.collection-items{
-        padding: 0rem;
-        border: 1px solid red;
-        grid-template-columns: repeat(2,1fr);
-        gap: 0.5rem;
+    .collection-container{
+        padding: 0px;
+        margin: 0px;
     }
 
-    .collection-container>.collection-items>.item {
-        margin: 0px;
+    .collection-container>.collection-items {
+        padding: 0rem;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+
+    .feature-container{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .feature-container > img{
+        width: 100%;
+        border: 1px solid blue;
+    }
+    .feature-container > .feature-content > .feature-content-description{
+        width: 100%;
     }
 }
 
@@ -341,4 +386,11 @@ main>section {
         gap: 1rem;
         padding: 0rem;
     }
+
+    .feature-container{
+        flex-direction: column;
+        padding: 1rem;
+    }
+   
+
 }
