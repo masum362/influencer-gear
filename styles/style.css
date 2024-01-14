@@ -10,9 +10,29 @@
     box-sizing: border-box;
 }
 
+
+
 body {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
+}
+
+.btn {
+    border-radius: 2.8rem;
+    background: var(--theme-color);
+    color: #FFF;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+header {
+    padding: 2rem 5rem;
 }
 
 header>nav {
@@ -20,8 +40,6 @@ header>nav {
     justify-content: space-between;
     align-items: center;
     gap: 3rem;
-    padding: 2rem 5rem;
-    border: 1px solid red;
 
 }
 
@@ -35,7 +53,6 @@ header>nav>ul {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    border: 1px solid red;
 }
 
 header>nav>ul>li {
@@ -48,4 +65,34 @@ header>nav>ul>li>a {
     color: #3A3A3A;
     font-size: 1rem;
     font-weight: 600;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    padding: 4rem 0rem;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+}
+
+.hero-content>h1 {
+    color: var(--primary-color);
+    font-size: 3.2rem;
+    line-height: 4.5rem;
+}
+
+.hero-img {
+    background-image: url('../images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 1rem;
+
 }
