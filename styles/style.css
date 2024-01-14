@@ -245,7 +245,41 @@ main>section {
     line-height: 1.6rem;
     width: 35rem;
     text-align: justify;
-    
+
+}
+
+footer {
+    padding: 3rem;
+    background: #0A0826;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    color: white;
+
+}
+
+footer>h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+footer p {
+    font-family: Manrope;
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    text-align: center;
+    /* 171.429% */
+}
+
+footer>.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
 /* mobile device */
@@ -299,7 +333,8 @@ main>section {
         gap: 1rem;
         padding: 0rem;
     }
-    .collection-container{
+
+    .collection-container {
         padding: 0px;
         margin: 0px;
     }
@@ -310,15 +345,17 @@ main>section {
         gap: 1rem;
     }
 
-    .feature-container{
+    .feature-container {
         flex-direction: column;
         padding: 1rem;
     }
-    .feature-container > img{
+
+    .feature-container>img {
         width: 100%;
         border: 1px solid blue;
     }
-    .feature-container > .feature-content > .feature-content-description{
+
+    .feature-container>.feature-content>.feature-content-description {
         width: 100%;
     }
 }
@@ -387,10 +424,10 @@ main>section {
         padding: 0rem;
     }
 
-    .feature-container{
+    .feature-container {
         flex-direction: column;
         padding: 1rem;
     }
-   
+
 
 }
